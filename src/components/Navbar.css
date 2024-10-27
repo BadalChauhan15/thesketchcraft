@@ -1,0 +1,135 @@
+/* Base styles for header */
+.header {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    margin: 0 auto;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    padding-right: 100px;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+
+.menu-button {
+    display: none; /* Hidden by default */
+    font-size: 28px;
+    cursor: pointer;
+    color: black;
+    padding: 0;
+}
+
+.menu-button:hover {
+    color: black;
+}
+
+.nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: black;
+}
+
+.nav-links li a:hover {
+    color: gray;
+}
+
+/* Search and Profile Box */
+.search-profile-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Responsive Styles */
+/* Large screens (desktops) */
+@media (min-width: 1024px) {
+    .header {
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    nav {
+        gap: 150px;
+        padding-right: 150px;
+    }
+
+    .nav-links {
+        gap: 30px;
+    }
+
+    .search-profile-box {
+        gap: 20px;
+    }
+}
+
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+    .header {
+        margin: 0 auto;
+        padding: 10px 0;
+    }
+
+    nav {
+        gap: 70px;
+        padding-right: 50px;
+    }
+
+    .nav-links {
+        gap: 30px;
+    }
+
+    .search-profile-box {
+        gap: 10px;
+    }
+}
+
+
+@media (max-width: 767px) {
+    .header {
+        padding: 10px 20px;
+    }
+
+    /* Show menu button and hide links initially */
+    .menu-button {
+        display: block;
+    }
+
+    .nav-links {
+        display: none; /* Hide links on small screens */
+        position: absolute;
+        width: 200px;
+        top: 60px;
+        right: 10px;
+        background-color: white;
+        border: 1px solid lightgray;
+        border-radius: 8px;
+        padding: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Show nav links when menu is open */
+    .nav-links.show {
+        display: flex;
+    }
+
+    .header {
+        justify-content: space-between;
+    }
+}

@@ -1,0 +1,16 @@
+.search-bar {
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.search-bar-input {
+    border: none; /* Removes the border */
+    border-radius: 20px;
+    outline: none; /* Removes the outline that appears during focus */
+    background-color: white;
+    color: black;
+    width: 100%;
+    padding: 4px 10px 5px 20px;
+}
+
