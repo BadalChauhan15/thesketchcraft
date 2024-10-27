@@ -22,10 +22,10 @@ function Navbar() {
             <a href="#">Portraits</a>
           </li>
           <li>
-            <a href="#">About Us</a>
+            <a href="#">About Me</a>
           </li>
           <li>
-            <a href="#">Contact Us</a>
+            <a href="#">Contact Me</a>
           </li>
         </ul>
       </nav>
